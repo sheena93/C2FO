@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`About should take a snapshot 1`] = `<DocumentFragment />`;
+
+exports[`BookContext should take a snapshot 1`] = `<DocumentFragment />`;
