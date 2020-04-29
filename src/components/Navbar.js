@@ -7,6 +7,9 @@
 
 import React, { Fragment, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import AppBar from '@material-ui/core/AppBar'
+import Toolbar from '@material-ui/core/Toolbar'
+import Typography from '@material-ui/core/Typography'
 
 const Navbar = () => {
   useEffect(() => {
@@ -18,6 +21,9 @@ const Navbar = () => {
     <Fragment>
       <nav className='z-depth-0'>
         <div className='nav-wrapper'>
+        <AppBar>
+        <Toolbar>
+         <Typography variant="title" color="inherit">
           <a href='/' className='brand'>
             Novel<span>App</span>
           </a>
@@ -39,6 +45,9 @@ const Navbar = () => {
               <Link to='/contact'>Contact Us</Link>
             </li>
           </ul>
+          </Typography>
+                </Toolbar>
+          </AppBar>
         </div>
       </nav>
 

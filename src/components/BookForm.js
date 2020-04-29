@@ -6,6 +6,7 @@
 
 import React, { useContext, useState } from 'react';
 import { BookContext } from '../contexts/BookContext';
+import Button from '@material-ui/core/Button';
 
 const BookForm = () => {
   const { addBook } = useContext(BookContext);
@@ -64,12 +65,9 @@ const BookForm = () => {
             </label>
           </div>
           <div className='input-field center'>
-            <button
-              type='submit'
-              className='btn waves-effect waves-light amber darken-2'
-            >
+          <Button variant="contained" color="primary">
               <i className='material-icons right'>add_circle</i>Add
-            </button>
+          </Button>
           </div>
         </form>
       </div>
